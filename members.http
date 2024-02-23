@@ -1,0 +1,10 @@
+### create member
+POST http://localhost:3300/members
+Content-Type: application/json
+
+{
+  "firstname": "Kevin",
+  "lastname": "Kimani",
+  "email": "kevin.kimani@thejitu.com",
+  "cohortno": "22"
+}
