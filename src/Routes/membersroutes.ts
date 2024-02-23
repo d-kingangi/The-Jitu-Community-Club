@@ -4,9 +4,9 @@ import { createmember, deletemembers, getsinglemember, updatemember, getallmembe
 const membersRouter = Router()
 
 membersRouter.post('/', createmember)
-membersRouter.get('/', getsinglemember)
+membersRouter.get('/:id', getsinglemember)
 membersRouter.get('/', getallmembers)
-membersRouter.put('/', updatemember)
-membersRouter.delete('/', deletemembers)
+membersRouter.put('/:id', updatemember)
+membersRouter.delete('/:id', deletemembers)
 
 export default membersRouter

@@ -6,3 +6,5 @@ CREATE TABLE members (
     cohortno INT NOT NULL,
     isDeleted BIT DEFAULT 0
   );
+
+  SELECT * FROM members

@@ -3,8 +3,27 @@ POST http://localhost:3300/members
 Content-Type: application/json
 
 {
-  "firstname": "Kevin",
-  "lastname": "Kimani",
-  "email": "kevin.kimani@thejitu.com",
+  "firstname": "Jesus",
+  "lastname": "Christ",
+  "email": "Jesus.christ@thejitu.com",
+  "cohortno": "22"
+}
+
+
+###
+GET http://localhost:3300/members
+Content-Type: application/json
+
+###
+DELETE http://localhost:3300/members/5e7c5de0-ab47-4223-96a5-587b86cae628
+Content-Type: application/json
+
+###
+PUT http://localhost:3300/members/5db7045a-93d8-417d-b881-820f9e3c1a17
+
+{
+  "firstname": "Jesus",
+  "lastname": "Magdalene",
+  "email": "Jesus.Magdalene@thejitu.com",
   "cohortno": "22"
 }

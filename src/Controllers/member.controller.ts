@@ -96,7 +96,7 @@ export const updatemember = async(req:Request, res: Response)=>{
         .input("lastname", mssql.VarChar, lastname)
         .input("email", mssql.VarChar, email)
         .input("cohortno", mssql.VarChar, cohortno)
-        .execute('updateuser')).rowsAffected
+        .execute('updatemember')).rowsAffected
 
         console.log(result);
         
