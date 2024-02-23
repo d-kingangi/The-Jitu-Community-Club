@@ -223,7 +223,7 @@ describe('Account deleted successfully', ()=>{
 
         jest.spyOn(mssql, 'connect').mockResolvedValue(mockedPool as never)
 
-        await createmember(req as any, res)
+        await deletemembers(req as any, res)
 
         expect(res.json).toHaveBeenCalledWith({message: "Account deleted successfully"})
     })
